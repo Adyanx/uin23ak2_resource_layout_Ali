@@ -1,0 +1,63 @@
+header{
+    border: 1px solid grey;
+}
+
+header h1{
+    margin: 5% 5%;
+    text-transform: uppercase;
+    color: grey;
+}
+
+div#container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    margin-top: 10%;
+    text-transform: uppercase;
+}
+
+nav a{
+    border: 20px white;
+    border-style: none solid none solid;
+    text-decoration: none;
+    color: rgb(73, 72, 72);
+    font-size: x-large;
+    background-color: lightgrey;
+    border-bottom: 1px solid #00FFFF;
+    padding: 2%;
+}
+
+nav a.active{
+    border: #00FFFF;
+    border-bottom: solid #00FFFF;
+    background-color: #00FFFF;
+    color: white;
+    margin-right: 2%;
+}
+
+main{
+    margin-top: 2%;
+}
+
+main article{
+    border: 1px solid grey;
+    border-top: 5px solid #00FFFF;
+    word-break: break-all;
+}
+
+main article h2, p{
+    word-break: break-all;
+    margin-left: 3%;
+    margin-right: 30%;
+}
+
+main article ul li a{
+    color: #00BCE3;
+}
+
