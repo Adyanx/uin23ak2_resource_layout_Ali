@@ -3,6 +3,7 @@
 
 body{
     font-family: 'Rubik', sans-serif;
+    word-break: break-all;
 }
 
 header{
@@ -30,28 +31,29 @@ nav{
     text-transform: uppercase;
 }
 
-nav a{
-    border: 20px white;
-    border-style: none solid none solid;
+nav button{
+    border: solid darkgrey;
     text-decoration: none;
     color: rgb(73, 72, 72);
     font-size: x-large;
-    background-color: lightgrey;
+    background-color: rgb(236, 231, 231);
     border-bottom: 1px solid #00FFFF;
     padding: 2%;
 }
 
-nav a.active{
-    border: #00FFFF;
-    border-bottom: solid #00FFFF;
-    background-color: #00FFFF;
+nav button:hover{
     color: white;
-    margin-right: 2%;
+
 }
 
-main{
-    margin-top: 2%;
+nav button.active{
+    border: #00FFFF;
+    border-bottom: 1px solid #00FFFF;
+    background-color: #00FFFF;
+    color: white;
 }
+
+
 
 main article{
     border: 1px solid grey;
@@ -68,4 +70,25 @@ main article h2, p{
 main article ul li a{
     color: #00BCE3;
 }
+
+.btn {
+    margin-top: 5%;
+    border: solid darkgrey;
+    text-decoration: none;
+    color: rgb(73, 72, 72);
+    font-size: x-large;
+    background-color: rgb(236, 231, 231);
+    border-bottom: 1px solid #00FFFF;
+    padding: 2%;
+    margin-right: 2%;
+  }
+  
+  .btn.active {
+    border: #00FFFF;
+    border-bottom: 1px solid #00FFFF;
+    background-color: #00FFFF;
+    color: white;
+  }
+
+
 

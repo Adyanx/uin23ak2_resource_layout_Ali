@@ -94,3 +94,37 @@ const resources = [
         ]
     },
 ]
+
+const resource = resources
+
+const faner = document.getElementById("faner");
+const innhold = document.getElementById("innhold");
+
+faner.innerHTML = resources.map((resource, info) => {
+    return `<button class="btn ${info === 0 ? "active" : ""}" onClick="showTabContent(${info})">${resource.category} </button>`;
+}).join("");
+
+innhold.innerHTML = resources.map((resource, info) => {
+    return `<div class="innhold" style="display: ${info === 0 ? "block" : "none"}">
+        <h2>${resource.category}</h2>
+        <p>${resource.text}</p>
+        <ul>
+            ${resource.sources.map(source => `<li><a href="${source.url}"target="_blank">${source.title}</a></li>`).join("")}
+        </ul>
+    </div>`;
+}).join("");
+
+function showTabContent(info) {
+    const tabButtons = document.querySelectorAll(".btn");
+    tabButtons.forEach(button => button.classList.remove("active"));
+    const tabContents = document.querySelectorAll(".innhold");
+    tabContents.forEach(content => content.style.display = "none");
+    tabButtons[info].classList.add("active");
+    tabContents[info].style.display = "block";
+}
+
+
+
+
+
+
