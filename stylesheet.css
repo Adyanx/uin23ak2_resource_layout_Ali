@@ -35,15 +35,18 @@ main article h2, p{
     word-break: break-all;
     margin-left: 3%;
     margin-right: 30%;
+    color: grey;
 }
 
 main article ul li a{
     color: #00BCE3;
+    line-height: 2.5;
+    font-size: medium;
 }
 
 .btn {
     margin-top: 5%;
-    border: solid darkgrey;
+    border: 1px solid darkgrey;
     text-decoration: none;
     color: rgb(73, 72, 72);
     font-size: x-large;
