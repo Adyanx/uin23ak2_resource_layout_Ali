@@ -25,36 +25,6 @@ div#container {
     position: relative;
 }
 
-nav{
-    width: 100%;
-    margin-top: 10%;
-    text-transform: uppercase;
-}
-
-nav button{
-    border: solid darkgrey;
-    text-decoration: none;
-    color: rgb(73, 72, 72);
-    font-size: x-large;
-    background-color: rgb(236, 231, 231);
-    border-bottom: 1px solid #00FFFF;
-    padding: 2%;
-}
-
-nav button:hover{
-    color: white;
-
-}
-
-nav button.active{
-    border: #00FFFF;
-    border-bottom: 1px solid #00FFFF;
-    background-color: #00FFFF;
-    color: white;
-}
-
-
-
 main article{
     border: 1px solid grey;
     border-top: 5px solid #00FFFF;
