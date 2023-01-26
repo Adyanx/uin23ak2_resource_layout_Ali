@@ -3,7 +3,6 @@
 
 body{
     font-family: 'Rubik', sans-serif;
-    word-break: break-all;
 }
 
 header{
@@ -28,22 +27,22 @@ div#container {
 main article{
     border: 1px solid grey;
     border-top: 5px solid #00FFFF;
-    word-break: break-all;
 }
 
 main article h2, p{
-    word-break: break-all;
     margin-left: 3%;
-    margin-right: 30%;
+    max-width: 65%;
 }
 
 main article ul li a{
+    line-height: 1.5;
     color: #00BCE3;
+    font-size: medium;
 }
 
 .btn {
     margin-top: 5%;
-    border: solid darkgrey;
+    border: 1px solid darkgrey;
     text-decoration: none;
     color: rgb(73, 72, 72);
     font-size: x-large;

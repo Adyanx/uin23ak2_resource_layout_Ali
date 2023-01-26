@@ -101,7 +101,7 @@ const faner = document.getElementById("faner");
 const innhold = document.getElementById("innhold");
 
 faner.innerHTML = resources.map((resource, info) => {
-    return `<button class="btn ${info === 0 ? "active" : ""}" onClick="showTabContent(${info})">${resource.category} </button>`;
+    return `<button class="btn ${info === 0 ? "active" : ""}" onClick="tabContent(${info})">${resource.category} </button>`;
 }).join("");
 
 innhold.innerHTML = resources.map((resource, info) => {
@@ -114,7 +114,7 @@ innhold.innerHTML = resources.map((resource, info) => {
     </div>`;
 }).join("");
 
-function showTabContent(info) {
+function tabContent(info) {
     const tabButtons = document.querySelectorAll(".btn");
     tabButtons.forEach(button => button.classList.remove("active"));
     const tabContents = document.querySelectorAll(".innhold");
